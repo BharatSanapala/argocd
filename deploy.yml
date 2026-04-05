@@ -1,0 +1,18 @@
+apiVersion: apps/v2
+kind: Deployment
+metadata: 
+  name: my-dep
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: zomato
+  template:
+    metadata: 
+      name: my-temp
+      labels: 
+        app: zomato
+    spec:
+      conatiners:
+        - name: my-cont
+          image: nginx 
