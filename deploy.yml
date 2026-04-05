@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: my-cont
-          image: nginx
+          image: shaikmustafa/paytm:movie
           ports:
             - containerPort: 80
