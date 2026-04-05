@@ -10,10 +10,11 @@ spec:
       app: zomato
   template:
     metadata: 
-      name: my-temp
       labels: 
         app: zomato
     spec:
-      conatiners:
+      containers:
         - name: my-cont
-          image: nginx 
+          image: nginx
+          ports:
+            - containerPort: 80
